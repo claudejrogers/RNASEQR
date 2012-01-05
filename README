@@ -1,0 +1,30 @@
+=========================================================================
+RNASEQR - A streamlined and accurate RNA-seq sequence analysis program 
+=========================================================================
+
+RNASEQR is a nucleotide sequence mapper/aligner and is designed specifically for RNA-seq data analysis. It takes advantage of the annotated transcripts and genomic reference sequences to obtain high quality mapping/alignment results. Therefore, RNASEQR may not have a better performance when a genome-wide transcriptomic annotation is unavailable. Fortunately, comprehensive transcriptomic annotation is available for most model organisms.
+
+
+===  How to Cite RNASEQR  ===
+RNASEQR - A streamlined and accurate RNA-seq sequence analysis program
+Leslie Y Chen, Kuo-Chen Wei, Abner C.-Y. Huang, Kai Wang, Chiung-Yin Huang, Danielle Yi, Chuan Yi Tang, David J. Galas, Leroy E. Hood
+Nucl. Acids Res. (2011) doi: 10.1093/nar/gkr1248
+
+
+===  DOCUMENTATION ===
+See MANUAL_V1.0.html
+
+
+===  LICENSE ===
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+
+=== INQUIRY ===
+
+Please contact Dr Leslie Chen for any inquiry.
+ 
+Leslie Chen PhD
+Research Scientist, Institute for Systems Biology
+lchen (AT) systemsbiology (DOT) org
+chenyyl (AT) gmail (DOT) com
