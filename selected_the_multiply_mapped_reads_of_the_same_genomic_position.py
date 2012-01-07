@@ -136,23 +136,14 @@ def extract_gene_isoform_relation(gtf_file):
 	return ENST2ENSG
 
 def complement_sequence(seq):
-	seq=list(seq)
-	seq.reverse()
-	for i in xrange(len(seq)):
-		if seq[i]=="N":
-			continue
-		elif seq[i]=="A":
-			seq[i]="T"
-		elif seq[i]=="G":
-			seq[i]="C"
-		elif seq[i]=="C":
-			seq[i]="G"
-		elif seq[i]=="T":
-			seq[i]="A"
-		else:
-			print "Wrong Sequence Format"
-			exit(2)
-	return "".join(seq)
+	table = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'\
+                'xTxGxxxCxxxxxxNxxxxxAxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'\
+                'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'\
+                'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+	comp = seq[::-1].translate(table)
+	if 'x' in comp:
+		raise ValueError, 'Wrong Sequence Format!'
+	return comp
 
 def reverse_CIGAR(CIGAR):
 	CIGAR=CIGAR_parser.findall(CIGAR)
